@@ -22,7 +22,7 @@ app.listen(port, () => {
   startTime = new Date();
   console.log(`Example app listening on port ${port} at ${startTime} | Running On: ${podname}\n`);
   // 10s后结束进程，模拟应用失败关闭
-  setTimeout(() => {
-    process.exit(1);
-  }, 10000);
+  // setTimeout(() => {
+  //   process.exit(1);
+  // }, 10000);
 });
