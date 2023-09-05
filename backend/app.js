@@ -7,7 +7,7 @@ let requests = 0;
 let startTime;
 
 app.get('/',  (req, res) => {
-  res.send(`Hello world, it's ${podname}(v3)\n`);
+  res.send(`Hello world, it's ${podname}(v4)\n`);
   console.log(`Running On: ${podname} | Total Requests: ${++requests} | App Uptime: ${(new Date() - startTime)/1000} seconds | Log Time: ${new Date()}`);
 });
 
