@@ -7,9 +7,12 @@ metadata:
     role: backend
     env: test
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
-  - port: 4000
+    - protocol: TCP
+      port: 80
+      targetPort: 4000
+
   selector:
     app: backend-express-demo
     role: backend
